@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Maxim Shleydovets](https://up.htmlacademy.ru/adaptive/22/user/1512041).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 
