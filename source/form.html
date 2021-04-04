@@ -35,24 +35,24 @@
         <!-- form main name-form -->
         <fieldset class="name-form">
           <legend class="review-form__headliner name-form__headliner">Представьтесь:</legend>
-          <label class="review-form__label name-form__label--name" for="name">Имя*:
-            <input class="review-form__input name-form__input--name" type="text" id="name" placeholder="Пётр" required autofocus>
+          <label class="review-form__label name-form__label--name" for="enter-name">Имя*:
+            <input class="review-form__input name-form__input--name" type="text" id="enter-name" name="name" placeholder="Пётр" required autofocus>
           </label>
-          <label class="review-form__label name-form__label--surname" for="surname">Фамилия*:
-            <input class="review-form__input name-form__input--surname" type="text" id="surname" placeholder="Иванов" required>
+          <label class="review-form__label name-form__label--surname" for="enter-surname">Фамилия*:
+            <input class="review-form__input name-form__input--surname" type="text" id="enter-surname" name="surname" placeholder="Иванов" required>
           </label>
-          <label class="review-form__label name-form__label--subname" for="subname">Отчество:
-            <input class="review-form__input name-form__input--subname" type="text" id="subname" placeholder="Александрович">
+          <label class="review-form__label name-form__label--subname" for="enter-subname">Отчество:
+            <input class="review-form__input name-form__input--subname" type="text" id="enter-subname" name="subname" placeholder="Александрович">
           </label>
         </fieldset>
         <!-- form main contacts-form -->
         <fieldset class="contacts-form">
           <legend class="review-form__headliner contacts-form__headliner">Контактная информация:</legend>
           <label class="review-form__label contacts-form__label--tel" for="enter-tel">Контактный телефон*:
-            <input class="review-form__input contacts-form__input--tel" type="tel" id="enter-tel" placeholder="Введите телефон" maxlength="10" required>
+            <input class="review-form__input contacts-form__input--tel" type="tel" id="enter-tel" name="telephone" placeholder="Введите телефон" maxlength="10" required>
           </label>
           <label class="review-form__label contacts-form__label--email" for="enter-email">Электронная почта*:
-            <input class="review-form__input contacts-form__input--email" type="email" id="enter-email" placeholder="Введите e-mail" required>
+            <input class="review-form__input contacts-form__input--email" type="email" id="enter-email" name="e-mail" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
         <!-- form main impression-form -->
@@ -60,15 +60,15 @@
           <legend class="review-form__headliner impression-form__headliner">Ваше общее впечатление:</legend>
           <ul class="impression-form__list">
             <li class="impression-form__item">
-              <input class="impression-form__radio" type="radio" name="impession-radio" id="positive-radio" checked>
+              <input class="impression-form__radio" type="radio" name="impession-radio" id="positive-radio" value="positive" checked>
               <label class="impression-form__radio-label" for="positive-radio">Скорее положительное</label>
             </li>
             <li class="impression-form__item">
-              <input class="impression-form__radio" type="radio" name="impession-radio" id="negative-radio">
+              <input class="impression-form__radio" type="radio" name="impession-radio" id="negative-radio" value="negative">
               <label class="impression-form__radio-label" for="negative-radio">Скорее отрицательное</label>
             </li>
             <li class="impression-form__item">
-              <input class="impression-form__radio" type="radio" name="impession-radio" id="whoiam-radio">
+              <input class="impression-form__radio" type="radio" name="impession-radio" id="whoiam-radio" value="no-answer">
               <label class="impression-form__radio-label" for="whoiam-radio">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -78,19 +78,19 @@
           <legend class="review-form__headliner visited-form-headliner">Ваше общее впечатление:</legend>
           <ul class="visited-form__list">
             <li class="visited-form__item">
-              <input class="visited-form__checkbox" type="checkbox" id="devil-checkbox" checked>
+              <input class="visited-form__checkbox" type="checkbox" id="devil-checkbox" name="devil" checked>
               <label class="visited-form__checkbox-label" for="devil-checkbox">Мост Дьявола</label>
             </li>
             <li class="visited-form__item">
-              <input class="visited-form__checkbox" type="checkbox" id="bell-checkbox" checked>
+              <input class="visited-form__checkbox" type="checkbox" id="bell-checkbox" name="bell" checked>
               <label class="visited-form__checkbox-label" for="bell-checkbox">Гора-Колокол</label>
             </li>
             <li class="visited-form__item">
-              <input class="visited-form__checkbox" type="checkbox" id="park-checkbox" checked>
+              <input class="visited-form__checkbox" type="checkbox" id="park-checkbox" name="park" checked>
               <label class="visited-form__checkbox-label" for="park-checkbox">Слайд-парк</label>
             </li>
             <li class="visited-form__item">
-              <input class="visited-form__checkbox" type="checkbox" id="rocks-checkbox">
+              <input class="visited-form__checkbox" type="checkbox" id="rocks-checkbox" name="rocks">
               <label class="visited-form__checkbox-label" for="rocks-checkbox">Красные скалы</label>
             </li>
           </ul>
