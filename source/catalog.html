@@ -34,50 +34,58 @@
       <!-- catalog main photo-section -->
       <section class="gallery">
         <h2 class="visually-hidden">Фотогалерея</h2>
-        <figure class="gallery__item photoblock-1">
+        <figure class="gallery__item">
           <a class="gallery__link" href="#">
-            <img class="gallery__photo photoblock-1__image" src="img/gallery/photo-1-mobile.jpg" width="280" height="280" alt="Дорога на закате">
+            <img class="gallery__photo gallery__photo--sunset-road" src="img/gallery/sunset-road-mobile.jpg" width="280" height="280" alt="Дорога на закате">
           </a>
           <figcaption class="gallery__subject">
-            <h3 class="gallery__title photoblock-1__title">Неродные просторы</h3>
-            <p class="gallery__author photoblock-1__author">Автор фото: Борис</p>
+            <h3 class="gallery__title">Неродные просторы</h3>
+            <p class="gallery__author">Автор фото: Борис</p>
           </figcaption>
         </figure>
-        <figure class="gallery__item photoblock-2">
+        <figure class="gallery__item">
           <a class="gallery__link" href="#">
-            <img class="gallery__photo photoblock-2__image" src="img/gallery/photo-2-mobile.jpg" width="280" height="280" alt="Причудливый кактус">
+            <img class="gallery__photo gallery__photo--cactus" src="img/gallery/cactus-mobile.jpg" width="280" height="280" alt="Причудливый кактус">
           </a>
           <figcaption class="gallery__subject">
-            <h3 class="gallery__title photoblock-2__title">Местная растительность</h3>
-            <p class="gallery__author photoblock-2__author">Автор фото: Сергей</p>
+            <h3 class="gallery__title">Местная растительность</h3>
+            <p class="gallery__author">Автор фото: Сергей</p>
           </figcaption>
         </figure>
-        <figure class="gallery__item photoblock-3">
+        <figure class="gallery__item">
           <a class="gallery__link" href="#">
-            <img class="gallery__photo photoblock-3__image" src="img/gallery/photo-3-mobile.jpg" width="280" height="280" alt="Серпантин на лесистых холмах">
+            <img class="gallery__photo gallery__photo--serpentine" src="img/gallery/serpentine-mobile.jpg" width="280" height="280" alt="Серпантин на лесистых холмах">
           </a>
           <figcaption class="gallery__subject">
-            <h3 class="gallery__title photoblock-3__title">Дорога на Север</h3>
-            <p class="gallery__author photoblock-3__author">Автор фото: Пётр</p>
+            <h3 class="gallery__title">Дорога на Север</h3>
+            <p class="gallery__author">Автор фото: Пётр</p>
           </figcaption>
         </figure>
-        <figure class="gallery__item photoblock-4">
+        <figure class="gallery__item">
           <a class="gallery__link" href="#">
-            <img class="gallery__photo photoblock-4__image" src="img/gallery/photo-4-mobile.jpg" width="280" height="280" alt="Скальное образование похожее на мост">
+            <img class="gallery__photo gallery__photo--devil-bridge" src="img/gallery/devil-bridge-mobile.jpg" width="280" height="280" alt="Скальное образование похожее на мост">
           </a>
           <figcaption class="gallery__subject">
-            <h3 class="gallery__title photoblock-4__title">Мост Дьявола</h3>
-            <p class="gallery__author photoblock-4__author">Автор фото: Антон</p>
+            <h3 class="gallery__title">Мост Дьявола</h3>
+            <p class="gallery__author">Автор фото: Антон</p>
           </figcaption>
         </figure>
       </section>
       <!-- catalog main video-section -->
       <section class="video-section">
-        <h2 class="visually-hidden">Видео</h2>
+        <h2 class="visually-hidden">Видео-презентация</h2>
         <h3 class="video-section__title">Всё ещё сомневаетесь?</h3>
         <p class="video-section__subtitle">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video-section video" src="#" height="200" width="320" controls loop poster="img/gallery/video-mobile.jpg">
-        </video>
+        <div class="video-section video">
+          <a class="video__link" href="#">
+            <img class="video__poster" src="img/gallery/video-mobile.jpg" height="200" width="320" alt="Превью видео-презентации: дорога среди горных образований">
+          </a>
+          <p><input class="video__range" type="range" name="video-range" min="0" max="100" step="1" value="30"></p>
+          <button class="video__button video__button--play" type="button">Play</button>
+          <button class="video__button video__button--replay" type="button">Replay</button>
+          <button class="video__button video__button--cc" type="button">Субтитры</button>
+          <button class="video__button video__button--full-screen" type="button">На весь экран</button>
+        </div>
       </section>
     </main>
     <!-- CATALOG FOOTER -->
