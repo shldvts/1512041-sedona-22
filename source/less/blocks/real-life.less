@@ -1,0 +1,40 @@
+// @import "blocks/real-life.less"
+
+.real-life {
+
+  background-color: @basic-white;
+  color: @basic-black;
+
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 15px;
+  }
+
+  &__specification {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__item {
+    text-align: start;
+    padding: 10px 20px 10px 60px;
+    font-family: @font;
+
+    &--houseroom {
+      background-image: url(../../img/icon-houseroom.svg);
+      background-repeat: no-repeat;
+    }
+
+    &--souvenirs {
+      background-image: url(../../img/icon-souvenirs.svg);
+      background-repeat: no-repeat;
+    }
+
+    &--food {
+      background-image: url(../../img/icon-food.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}

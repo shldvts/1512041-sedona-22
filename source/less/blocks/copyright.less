@@ -1,0 +1,25 @@
+// @import "blocks/copyright.less";
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &__link {
+
+    &:hover {
+      fill: @blue-basic;
+    }
+
+    &:active {
+      fill: @basic-black;
+      opacity: 0.3;
+    }
+  }
+}

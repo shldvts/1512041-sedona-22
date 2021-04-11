@@ -1,0 +1,40 @@
+// @import "blocks/advantages.less"
+
+.advantages {
+  font-family: @font;
+
+  &__banner {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+      &--real-life,
+      &--devil-bridge {
+        background-color: @blue-basic;
+        color: @basic-white;
+      }
+
+      &--small-city,
+      &--picturesque-road,
+      &--tourist-free {
+        background-color: @gray-index-back;
+      }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 15px;
+  }
+
+  &__specification {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
