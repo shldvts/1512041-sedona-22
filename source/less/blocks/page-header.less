@@ -1,0 +1,45 @@
+// @import "blocks/page-header.less";
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__pic-block {
+  height: 390px;
+  background-image: url(../img/sedona-back-m.jpg);
+  background-repeat: no-repeat;
+  background-color: @blue-basic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header__pic-text {
+  width: 282px;
+  height: 214px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__pic-text {
+    width: 461px;
+    height: 350px;
+  }
+
+  .page-header__pic-block {
+    height: 520px;
+    background-image: url(../img/sedona-back-t.jpg);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__pic-text {
+    width: 461px;
+    height: 350px;
+  }
+
+  .page-header__pic-block {
+    height: 520px;
+    background-image: url(../img/sedona-back-d.jpg);
+  }
+}

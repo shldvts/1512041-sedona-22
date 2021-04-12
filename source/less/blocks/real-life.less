@@ -1,0 +1,38 @@
+// @import "blocks/real-life.less"
+
+.real-life {
+
+  background-color: @basic-white;
+  color: @basic-black;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.real-life__title {
+  .font-property(700; 21px; 15px);
+}
+
+.real-life__specification {
+  .font-property(400; 18px; 26px);
+}
+
+.real-life__item {
+  text-align: start;
+  padding: 10px 20px 10px 60px;
+
+  &--houseroom {
+    background-image: url(../img/icon-houseroom.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--souvenirs {
+    background-image: url(../img/icon-souvenirs.svg);
+    background-repeat: no-repeat;
+  }
+
+  &--food {
+    background-image: url(../img/icon-food.svg);
+    background-repeat: no-repeat;
+  }
+}
