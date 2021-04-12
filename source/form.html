@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,21 +12,28 @@
     <!-- FORM HEADER -->
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo.svg" width="102" height="84" alt="Sedona">
+        <img src="img/sedona-logo.svg" width="102" height="84" alt="Sedona">
       </a>
       <nav class="header-nav">
         <button class="header-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="header-nav__list">
-          <li class="header-nav__list-item"><a href="index.html">Главная</a></li>
-          <li class="header-nav__list-item"><a href="catalog.html">Фото и видео</a></li>
-          <li class="header-nav__list-item"><a href="#">Форма отзыва</a></li>
-          <li class="header-nav__list-item"><a href="blank.html">HTML Academy</a></li>
+          <li class="header-nav__list-item">
+            <a class="header-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="header-nav__list-item">
+            <a class="header-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="header-nav__list-item">
+            <a class="header-nav__link" href="#">Форма отзыва</a></li>
+          <li class="header-nav__list-item">
+            <a class="header-nav__link" href="blank.html">HTML Academy</a>
+          </li>
         </ul>
       </nav>
       <div class="page-header__pic-block page-header__pic-block--form">
-        <img src="img/sedona-text-fc.svg" width="229" height="39" alt="Wellcome to Sedona">
+        <img class="page-header__pic-text" src="img/sedona-text-fc.svg" width="229" height="39" alt="Wellcome to Sedona">
       </div>
     </header>
     <!-- FORM MAIN -->
@@ -59,7 +67,7 @@
         <!-- form main impression-form -->
         <fieldset class="impression-form">
           <legend class="review-form__headliner">Ваше общее впечатление:</legend>
-          <ul class="impression-form__list">
+          <ul class="review-form__list impression-form__list">
             <li class="impression-form__item">
               <input class="impression-form__radio" type="radio" name="impession-radio" id="positive-radio" value="positive" checked>
               <label class="impression-form__radio-label" for="positive-radio">Скорее положительное</label>
@@ -76,8 +84,8 @@
         </fieldset>
         <!-- form main visited-form -->
         <fieldset class="visited-form">
-          <legend class="review-form__headliner">Ваше общее впечатление:</legend>
-          <ul class="visited-form__list">
+          <legend class="review-form__headliner">Посещенные достопримечательности:</legend>
+          <ul class="review-form__list visited-form__list">
             <li class="visited-form__item">
               <input class="visited-form__checkbox" type="checkbox" id="devil-checkbox" name="devil" checked>
               <label class="visited-form__checkbox-label" for="devil-checkbox">Мост Дьявола</label>
@@ -99,9 +107,8 @@
         <!-- form main emotions-form -->
         <fieldset class="emotions-form">
           <legend class="review-form__headliner">Опишите свои эмоции:</legend>
-          <label class="visually-hidden" for="emotions-area">Заполните это поле:
-            <textarea class="review-form__input emotions-form__input" id="emotions-area" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
-          </label>
+          <textarea class="review-form__input emotions-form__input" id="emotions-area" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
+          <label class="visually-hidden" for="emotions-area">Заполните это поле:</label>
         </fieldset>
         <small class="review-form__legend">* — обязательные поля</small>
         <p><button class="button review-form__button" type="submit">Отправить отзыв</button></p>
@@ -109,25 +116,33 @@
     </main>
     <!-- FORM FOOTER -->
     <footer class="page-footer">
-      <div class="page-footer__title">
-        <a class="hashtag" href="index.html">#visitsedona</a>
-      </div>
+      <a class="page-footer__hashtag" href="index.html">#visitsedona</a>
       <div class="page-footer__social social-club">
         <ul class="social-club__list">
           <li class="social-club__item">
-            <a class="social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            <a class="button social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy">
+              <img src="img/icon-twitter.svg" width="18" height="15" alt="twitter">
+            </a>
           </li>
           <li class="social-club__item">
-            <a class="social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="button social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy">
+              <img src="img/icon-facebook.svg" width="9" height="19" alt="facebook">
+            </a>
           </li>
           <li class="social-club__item">
-            <a class="social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy">Мы на Ютубе</a>
+            <a class="button social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy">
+              <img src="img/icon-youtube.svg" width="20" height="14" alt="youtube">
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="40" height="50">
+            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>

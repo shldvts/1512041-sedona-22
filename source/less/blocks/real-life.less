@@ -4,37 +4,35 @@
 
   background-color: @basic-white;
   color: @basic-black;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
 
-  &__title {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 15px;
+.real-life__title {
+  .font-property(700; 21px; 15px);
+}
+
+.real-life__specification {
+  .font-property(400; 18px; 26px);
+}
+
+.real-life__item {
+  text-align: start;
+  padding: 10px 20px 10px 60px;
+
+  &--houseroom {
+    background-image: url(../img/icon-houseroom.svg);
+    background-repeat: no-repeat;
   }
 
-  &__specification {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
+  &--souvenirs {
+    background-image: url(../img/icon-souvenirs.svg);
+    background-repeat: no-repeat;
   }
 
-  &__item {
-    text-align: start;
-    padding: 10px 20px 10px 60px;
-    font-family: @font;
-
-    &--houseroom {
-      background-image: url(../../img/icon-houseroom.svg);
-      background-repeat: no-repeat;
-    }
-
-    &--souvenirs {
-      background-image: url(../../img/icon-souvenirs.svg);
-      background-repeat: no-repeat;
-    }
-
-    &--food {
-      background-image: url(../../img/icon-food.svg);
-      background-repeat: no-repeat;
-    }
+  &--food {
+    background-image: url(../img/icon-food.svg);
+    background-repeat: no-repeat;
   }
 }

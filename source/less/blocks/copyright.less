@@ -5,21 +5,20 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
 
-  &__text {
-    font-size: 14px;
-    line-height: 26px;
+.copyright__text {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright__link {
+  &:hover {
+    fill: @blue-basic;
   }
 
-  &__link {
-
-    &:hover {
-      fill: @blue-basic;
-    }
-
-    &:active {
-      fill: @basic-black;
-      opacity: 0.3;
-    }
+  &:active {
+    fill: @basic-black;
+    opacity: 0.3;
   }
 }

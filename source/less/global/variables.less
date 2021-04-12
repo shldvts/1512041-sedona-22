@@ -15,6 +15,20 @@
 @video-buttons: #5C6870;
 @video-buttons-hover: #333333;
 
+// Viewports
+
+@mobile-width-only: 767px;
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
 // Fonts
 
 @font: "PT Sans", Arial, sans-serif;
+
+// Mixins
+
+.font-property(@weight; @size; @line-height) {
+  font-weight: @weight;
+  font-size: @size;
+  line-height: @line-height;
+}
