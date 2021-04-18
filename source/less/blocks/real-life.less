@@ -5,34 +5,81 @@
   background-color: @basic-white;
   color: @basic-black;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
   list-style: none;
 }
 
 .real-life__title {
-  .font-property(700; 21px; 15px);
+  .font-property(700; 18px; 26px);
+  margin: 0;
 }
 
 .real-life__specification {
-  .font-property(400; 18px; 26px);
+  .font-property(400; 14px; 21px);
 }
 
 .real-life__item {
   text-align: start;
   padding: 10px 20px 10px 60px;
+  background-repeat: no-repeat;
 
   &--houseroom {
     background-image: url("../img/icon-houseroom.svg");
-    background-repeat: no-repeat;
   }
 
   &--souvenirs {
     background-image: url("../img/icon-souvenirs.svg");
-    background-repeat: no-repeat;
   }
 
   &--food {
     background-image: url("../img/icon-food.svg");
-    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .real-life {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .real-life__item {
+    margin-top: 50px;
+    min-height: 280px;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: 50% 0;
+
+    &--houseroom {
+      background-size: 72px 75px;
+      order: 0;
+    }
+
+    &--souvenirs {
+      background-size: 68px 76px;
+      order: 2;
+    }
+
+    &--food {
+      background-size: 64px 75px;
+      order: 1;
+    }
+  }
+
+  .real-life__title {
+    .font-property(700; 21px; 26px);
+  }
+
+  .real-life__specification {
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .real-life__item {
+    padding: 0 50px 0 50px;
   }
 }
