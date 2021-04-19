@@ -46,16 +46,21 @@
   }
 
   .advantages__item {
-    &:not(:first-child) {
-      min-height: 256px;
-    }
-
     &--real-life {
       grid-area: adv1;
+      display: flex;
+      flex-wrap: wrap;
 
-      &:not(:last-child) {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+      .advantages__item-box {
+        width: 33.33%;
+      }
+
+      .advantages__image--real-life {
+        flex-grow: 1;
+      }
+
+      .real-life {
+        width: 100%;
       }
     }
 
