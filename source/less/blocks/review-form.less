@@ -1,21 +1,21 @@
-// @import "blocks/review-form.less"
+// @import "blocks/review.less"
 
-.review-form fieldset {
+.review fieldset {
   padding: 0;
   margin: 0;
   border: none;
   margin-bottom: 20px;
 }
 
-.review-form__headliner {
+.review__headliner {
   .font-property(700; 18px; 26px);
 }
 
-.review-form__label {
+.review__label {
   .font-property(400; 14px; 26px);
 }
 
-.review-form__input {
+.review__input {
   border: none;
   background-color: @gray-input;
   min-height: 58px;
@@ -26,20 +26,72 @@
   }
 }
 
-.review-form__list {
+.review__list {
   margin: 0;
   padding-left: 0;
   list-style: none;
   text-align: start;
 }
 
-.review-form__button {
+.review__radio-label {
+  .font-property(700; 18px; 26px);
+  text-transform: none;
+}
+
+.review__checkbox-label {
+  .font-property(700; 18px; 26px);
+  text-transform: none;
+}
+
+.review__button {
   border: none;
   cursor: pointer;
 }
 
 @media (max-width: @mobile-width-only) {
-  .review-form__legend {
+  .review__legend {
     display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+
+    .review__field--name-form {
+      width: 50%;
+    }
+
+    .review__field--contacts-form {
+      width: 100%;
+    }
+
+    .review__field--impression-form {
+      width: 50%;
+      order: -1;
+    }
+
+    .review__field--visited-form {
+      width: 100%;
+    }
+
+    .review__field--emotions-form {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .review__field--contacts-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .review__list--visited {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
