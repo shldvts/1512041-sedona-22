@@ -34,3 +34,52 @@
 .advantages__specification {
   .font-property(400; 18px; 26px);
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-areas:
+      "adv1 adv1 adv1"
+      "adv2 adv2 adv2"
+      "adv3 adv4 adv5";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .advantages__item {
+    &--real-life {
+      grid-area: adv1;
+      display: flex;
+      flex-wrap: wrap;
+
+      .advantages__item-box {
+        width: 33.33%;
+      }
+
+      .advantages__image--real-life {
+        flex-grow: 1;
+      }
+
+      .real-life {
+        width: 100%;
+      }
+    }
+
+    &--devil-bridge {
+      grid-area: adv2;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    &--small-city {
+      grid-area: adv3;
+    }
+
+    &--picturesque-road {
+      grid-area: adv4;
+    }
+
+    &--tourist-free {
+      grid-area: adv5;
+    }
+  }
+}
