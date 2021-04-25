@@ -1,8 +1,9 @@
 // @import "blocks/main-nav.less"
 
 .main-nav {
-  background-color: @basic-white;
-  min-height: 55px;
+  background-color: transparent;
+  min-height: 45px;
+  position: relative;
 }
 
 .main-nav__toggle {
@@ -16,6 +17,7 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+  margin: 0;
 
   &:hover {
     opacity: 0.6;
@@ -29,8 +31,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 7px;
+  right: 10px;
   width: 23px;
   height: 4px;
   background-color: @blue-basic;
@@ -40,9 +42,12 @@
 .main-nav--opened .main-nav__toggle {
   position: absolute;
   width: 23px;
-  height: 23px;
-  background-image: url("../img/icon-close.svg");
-  background-color: @blue-basic;
+  height: 22px;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+  background-image: url("../img/icons/icon-close.svg");
+  background-color: transparent;
 }
 
 .main-nav__list {
@@ -59,6 +64,8 @@
   background-color: @blue-basic;
   padding-top: 5px;
   padding-bottom: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
   &:hover {
     background-color: @blue-hover;
@@ -70,22 +77,48 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav {
-    min-height: 56px;
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__list-item {
+    display: none;
   }
 
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__list-item {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .main-nav__list-item {
-    background-color: @basic-white;
+    max-height: 55px;
+    flex-grow: 1;
   }
 
   .main-nav__link {
     color: @basic-black;
+    background-color: @basic-white;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &:hover {
+      color: @blue-basic;
+      background-color: @basic-white;
+    }
+
+    &:active {
+      color: @basic-black;
+      opacity: 0.3;
+    }
   }
 
   .main-nav__toggle {
