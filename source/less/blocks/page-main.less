@@ -1,24 +1,43 @@
 // @import "blocks/page-main.less"
 
 .page-main__title {
-  .font-property(700; 21px; 26px);
-  margin-top: 30px;
+  .font-property(700; 18px; 27px);
+  margin-top: 32px;
   margin-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .page-main__slogan {
   .font-property(400; 14px; 24px);
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 @media (min-width: @tablet-width) {
   .page-main__title {
+    .font-property(700; 21px; 26px);
     margin: 0 auto;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 60%;
   }
 
   .page-main__slogan {
     margin: 0 auto;
-    width: 460px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 50%;
+  }
+
+  .page-main__slogan {
+    margin-bottom: 45px;
   }
 }

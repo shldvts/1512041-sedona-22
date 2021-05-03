@@ -1,35 +1,77 @@
 // @import "blocks/advantages.less"
 
-.advantages__banner {
-  .font-property(400; 18px; 26px);
-}
-
 .advantages__list {
   margin: 0;
-  padding-left: 0;
+  padding: 0;
   list-style: none;
+  background-color: @gray-index-back;
 }
 
 .advantages__item {
-  &--real-life,
-  &--devil-bridge {
-    background-color: @blue-basic;
-    color: @basic-white;
-  }
+  min-height: 150px;
 
   &--small-city,
   &--picturesque-road,
   &--tourist-free {
-    background-color: @gray-index-back;
+    padding-top: 5px;
+    padding-bottom: 12px;
+  }
+}
+
+.advantages__item-box {
+  background-color: @blue-basic;
+  color: @basic-white;
+
+  &--real-life {
+    padding-top: 55px;
+    padding-bottom: 25px;
+  }
+
+  &--devil-bridge {
+    padding-top: 20px;
+    padding-bottom: 25px;
   }
 }
 
 .advantages__title {
-  .font-property(700; 21px; 15px);
+  .font-property(700; 18px; 26px);
+}
+
+.advantages__number {
+  .font-property(400; 14px; 18px);
 }
 
 .advantages__specification {
-  .font-property(400; 18px; 26px);
+  .font-property(400; 14px; 21px);
+}
+
+@media (max-width: @mobile-width-only) {
+  .advantages__item-box--real-life {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 384px;
+      height: 37px;
+      top: -1px;
+      left: 50%;
+      background-image: url("../img/vector-adv.svg");
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 384px;
+      height: 37px;
+      top: -1px;
+      right: 50%;
+      background-image: url("../img/vector-adv.svg");
+      background-repeat: no-repeat;
+      transform: scale(-1, 1);
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -47,24 +89,12 @@
       grid-area: adv1;
       display: flex;
       flex-wrap: wrap;
-
-      .advantages__item-box {
-        width: 33.33%;
-      }
-
-      .advantages__image--real-life {
-        flex-grow: 1;
-      }
-
-      .real-life {
-        width: 100%;
-      }
     }
 
     &--devil-bridge {
       grid-area: adv2;
-      display: grid;
-      grid-template-columns: 1fr 2fr;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     &--small-city {
@@ -78,5 +108,48 @@
     &--tourist-free {
       grid-area: adv5;
     }
+
+    &--small-city,
+    &--picturesque-road,
+    &--tourist-free {
+      min-height: 200px;
+      padding-top: 35px;
+    }
+  }
+
+  .advantages__item-box {
+    width: 33.33%;
+    padding-top: 40px;
+
+    &--devil-bridge {
+      order: 2;
+    }
+  }
+
+  .advantages__title {
+    .font-property(700; 21px; 26px);
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .advantages__specification {
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item-box {
+    padding-top: 50px;
+  }
+
+  .advantages__title {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  .advantages__specification {
+    margin: 0 auto;
+    width: 80%;
   }
 }

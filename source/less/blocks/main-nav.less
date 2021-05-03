@@ -31,8 +31,8 @@
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 7px;
-  right: 10px;
+  top: 10px;
+  right: 20px;
   width: 23px;
   height: 4px;
   background-color: @blue-basic;
@@ -96,19 +96,23 @@
   .main-nav__list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 
   .main-nav__list-item {
     max-height: 55px;
-    flex-grow: 1;
+    width: 20%;
+
+    &:nth-of-type(3) {
+      margin-left: auto;
+    }
   }
 
   .main-nav__link {
+    .font-property(700; 14px; 26px);
     color: @basic-black;
     background-color: @basic-white;
     border: none;
-    padding-left: 10px;
-    padding-right: 10px;
 
     &:hover {
       color: @blue-basic;
