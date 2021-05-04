@@ -33,18 +33,34 @@
   }
 
   .gallery__item {
+    margin: 0;
     width: 50%;
 
     &:first-of-type {
       width: 100%;
     }
   }
+
+  .video-section {
+    margin: 0 auto;
+    max-width: 648px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .gallery__item {
+    width: 33.33%;
+    outline: 3px solid green;
+    position: relative;
+  }
+
   .gallery__subject {
     background-color: fade(@basic-black; 30%);
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    color: @basic-white;
+    min-height: 80px;
+    width: 100%;
   }
 
   .video-section {

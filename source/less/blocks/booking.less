@@ -1,8 +1,7 @@
 // @import "blocks/booking.less";
 
 .booking {
-
-  margin-top: 25px;
+  margin-top: 35px;
   margin-bottom: 25px;
 }
 
@@ -12,12 +11,46 @@
 
 .booking__text {
   .font-property(400; 14px; 24px);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 25px;
+  margin-bottom: 45px;
 }
 
 .booking__button-search {
-  padding: 14px 32px 17px 32px;
+  padding: 14px 45px 17px 45px;
 }
 
 .booking__map {
-  margin-top: 40px;
+  margin-top: 65px;
+}
+
+@media (min-width: @tablet-width) {
+  .booking {
+    margin-top: 60px;
+    margin-bottom: 25px;
+  }
+
+  .booking__title {
+    .font-property(700; 30px; 26px);
+  }
+
+  .booking__text {
+    width: 55%;
+    margin: 40px auto 45px;
+  }
+
+  .booking__button-search {
+    padding: 14px 135px 17px 135px;
+  }
+
+  .booking__map {
+    margin-top: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking__map {
+    margin-top: 85px;
+  }
 }
