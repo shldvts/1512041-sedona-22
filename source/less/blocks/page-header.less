@@ -3,6 +3,7 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .page-header__logo {
@@ -26,12 +27,13 @@
   background-size: cover;
   background-color: @gray-index-line;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
 
   &--form,
   &--catalog {
-    height: 160px;
+    height: 158px;
     background-position-y: 90%;
   }
 
@@ -58,6 +60,13 @@
     transform: scale(-1, 1);
   }
 
+  .page-header__pic-text {
+    &--form,
+    &--catalog {
+      margin-bottom: 15px;
+    }
+  }
+
   @media (min-resolution: 2dppx) {
     background-image: url("../img/sedona-back-m@2x.jpg");
   }
@@ -69,14 +78,14 @@
 
   &--form,
   &--catalog {
-    width: 229px;
-    height: 39px;
+    width: 230px;
+    height: 40px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header__pic-text {
-    width: 461px;
+    width: 460px;
     height: 350px;
   }
 
@@ -90,7 +99,7 @@
 
     &--form,
     &--catalog {
-      height: 300px;
+      height: 290px;
       background-position-y: 90%;
     }
   }
@@ -110,6 +119,11 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/sedona-back-d@2x.jpg");
+    }
+
+    &--form,
+    &--catalog {
+      height: 300px;
     }
   }
 }
