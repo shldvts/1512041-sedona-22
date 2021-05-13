@@ -1,5 +1,12 @@
 // @import "global/global.less";
 
+.page__body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: @background-gray;
+}
+
 .page-container {
   margin: 0 auto;
   padding: 0;
@@ -7,9 +14,9 @@
   background-color: @basic-white;
   font-family: @font;
   text-transform: uppercase;
-  height: 100%;
   text-align: center;
-  max-width: 1200px;
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  width: 320px;
 }
 
 a {
@@ -51,5 +58,17 @@ img {
 
   &:disabled {
     background-color: @gray-input-hover;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-container {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-container {
+    width: 1200px;
   }
 }
