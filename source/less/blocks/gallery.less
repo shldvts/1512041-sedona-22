@@ -1,17 +1,29 @@
 // @import "blocks/gallery.less"
 
 .gallery {
-  text-align: center;
+  margin-top: 52px;
 }
 
 .gallery__item {
   margin: 0;
-  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -25px;
+    width: 100%;
+    height: 1px;
+    background-color: @gray-input-hover;
+  }
 }
 
 .gallery__subject {
   text-align: start;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 40px;
 }
 
@@ -29,7 +41,7 @@
 .gallery__like {
   .font-property(700; 14px; 24px);
   text-transform: none;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 35px;
   position: relative;
 
@@ -52,26 +64,59 @@
     flex-wrap: wrap;
     text-align: center;
     margin-top: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .gallery__item {
     margin: 0;
+    padding: 0;
     width: 50%;
     position: relative;
 
     &:first-of-type {
       width: 100%;
     }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .gallery__photo {
+    display: block;
   }
 
   .gallery__subject {
     background-color: @gray-input;
     margin: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery__title {
+    width: 70%;
+    margin-left: 20px;
+  }
+
+  .gallery__author {
+    width: 70%;
+    margin-left: 20px;
+  }
+
+  .gallery__like {
+    width: min-content;
+    position: absolute;
+    top: auto;
+    right: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .wrapper {
+  .gallery {
     padding: 0;
   }
 
@@ -83,29 +128,14 @@
   .gallery__subject {
     background-color: fade(@basic-black; 30%);
     position: absolute;
+    height: 80px;
     bottom: 0;
     color: @basic-white;
-    height: 80px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .video-section {
-    max-width: 800px;
-  }
-
-  .gallery__title {
-    padding: 10px 20px;
-  }
-
-  .gallery__author {
-    order: 1;
-    padding-left: 20px;
   }
 
   .gallery__like {
-    margin-left: auto;
-    padding-right: 20px;
+    &::before {
+      background-image: url("../img/icons/icon-like-w.svg");
+    }
   }
 }

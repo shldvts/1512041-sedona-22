@@ -3,6 +3,36 @@
 .video {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    height: 1px;
+    background-color: @gray-input-hover;
+  }
+}
+
+.video__title {
+  .font-property(700; 18px; 26px);
+  margin: 0;
+  margin-top: 3px;
+}
+
+.video__slogan {
+  .font-property(400; 14px; 24px);
+  width: 85%;
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.video__wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
@@ -10,20 +40,7 @@
   margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 80px;
-}
-
-.video__title {
-  .font-property(700; 18px; 26px);
-  margin: 0;
-  margin-top: 5px;
-}
-
-.video__slogan {
-  .font-property(400; 14px; 24px);
-  width: 85%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  position: relative;
 }
 
 .video-poster {
@@ -109,8 +126,14 @@
 
 @media (min-width: @tablet-width) {
   .video {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 52px;
+    margin-bottom: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .video__title {
@@ -121,16 +144,79 @@
     width: 70%;
     margin-bottom: 80px;
   }
+
+  .video__wrapper {
+    padding: 0;
+  }
+
+  .video__actions {
+    margin: -95px 0 0 0;
+    width: 100%;
+    background-color: fade(@basic-black; 60%);
+  }
+
+  .video__progressbar {
+    width: 65%;
+    height: 90px;
+    margin-left: 70px;
+    background-color: transparent;
+  }
+
+  .video__tools {
+    position: absolute;
+    bottom: 12px;
+    background-color: transparent;
+  }
+
+  .video__tools-button {
+    background-color: transparent;
+
+    &--reply {
+      margin-left: 12px;
+    }
+
+    &--subtitles {
+      margin-left: 475px;
+    }
+  }
+
+  .video__tools-icon {
+    fill: @basic-white;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .video {
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 110px;
+  }
+
+  .video__wrapper {
+    width: 800px;
   }
 
   .video__slogan {
-    width: 40%;
+    width: 42%;
     margin-bottom: 80px;
+  }
+
+  .video__tools-button {
+    &:hover {
+      cursor: pointer;
+
+      .video__tools-icon {
+        fill: fade(@basic-white; 60%);
+      }
+    }
+
+    &:active {
+      .video__tools-icon {
+        fill: fade(@basic-white; 30%);
+      }
+    }
+
+    &--subtitles {
+      margin-left: 625px;
+    }
   }
 }
