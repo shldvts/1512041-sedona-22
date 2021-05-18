@@ -1,14 +1,16 @@
 // @import "blocks/form-contacts.less";
 
-.contacts-form__caption {
-  text-align: start;
-  padding-left: 23px;
-  margin-top: 18px;
-  margin-bottom: 10px;
+.contacts-form {
+  margin-bottom: 5px;
 }
 
 .contacts-form__input-block {
   display: flex;
+  margin-top: 5px;
+}
+
+.contacts-form__caption {
+  margin-left: -75px;
 }
 
 .contacts-form__icon {
@@ -44,10 +46,7 @@
 @media (min-width: @tablet-width) {
   .contacts-form {
     border-top: 1px solid @gray-input-hover;
-  }
-
-  .contacts-form__block {
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
 
   .contacts-form__headliner {
@@ -57,7 +56,11 @@
 
   .contacts-form__caption {
     .font-property(400; 14px; 26px);
-    margin-bottom: 6px;
+    margin-left: -440px;
+  }
+
+  .contacts-form__input-block {
+    margin-bottom: 20px;
   }
 }
 
@@ -68,8 +71,12 @@
   }
 
   .contacts-form__headliner {
-    margin-bottom: 72px;
+    margin-bottom: 25px;
     width: 40%;
+  }
+
+  .contacts-form__caption {
+    margin-left: 0;
   }
 
   .contacts-form__input-block {
