@@ -4,6 +4,25 @@
   background-color: transparent;
   min-height: 56px;
   position: relative;
+
+  &--opened {
+    .page-header__logo {
+      top: 100%;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 56px;
+      background-color: @basic-white;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: 1;
+    }
+  }
 }
 
 .main-nav__toggle {
