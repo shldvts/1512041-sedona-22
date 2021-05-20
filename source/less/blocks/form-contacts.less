@@ -68,10 +68,23 @@
   .contacts-form {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .contacts-form__block {
+    width: 50%;
+
+    &:nth-child(2) {
+      width: 42%;
+    }
+  }
+
+  .contacts-form__input-block {
+    margin: 0;
   }
 
   .contacts-form__headliner {
-    margin-bottom: 25px;
+    margin-bottom: 60px;
     width: 40%;
   }
 
@@ -79,8 +92,20 @@
     margin-left: 0;
   }
 
-  .contacts-form__input-block {
+  .contacts-form__label-tel,
+  .contacts-form__label-email {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .contacts-form__input-tel,
+  .contacts-form__input-email {
+    margin-left: 15px;
+    font-family: inherit;
     flex-grow: 1;
-    margin-left: 5px;
+  }
+
+  .contacts-form__desktop-hide {
+    display: none;
   }
 }
