@@ -6,6 +6,7 @@
   padding: 0;
   list-style: none;
   min-height: 410px;
+  margin-top: 5px;
 }
 
 .real-life__item {
@@ -75,12 +76,9 @@
 
   .real-life__item {
     width: 33.33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-position: 50% 20%;
-    padding: 0 50px 0 50px;
+    padding: 0;
+    text-align: center;
 
     &--houseroom {
       background-image: url("../img/icons/icon-houseroom.svg");
@@ -103,25 +101,34 @@
 
   .real-life__title {
     .font-property(700; 21px; 26px);
-    margin-top: 90px;
+    margin-top: 150px;
+    margin-bottom: 15px;
 
     &::before {
       display: none;
     }
-
-    &--souvenirs {
-      margin-top: 110px;
-    }
   }
 
   .real-life__specification {
-    margin-top: 20px;
     text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .real-life__title {
     margin-top: 70px;
+  }
+
+  .real-life__title {
+    margin-top: 152px;
+    margin-bottom: 15px;
+  }
+
+  .real-life__specification {
+    width: 75%;
+    padding-top: 10px;
   }
 }

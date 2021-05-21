@@ -135,7 +135,8 @@
 
   .advantages__specification {
     margin: 0 auto;
-    width: 85%;
+    width: 72%;
+    margin-top: 25px;
   }
 }
 
@@ -144,6 +145,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .advantages__item {
+    &--real-life {
+      margin-bottom: -5px;
+    }
+
+    &--devil-bridge {
+      margin-bottom: 8px;
+    }
+  }
+
   .advantages__item-box {
     padding-top: 50px;
   }
@@ -154,7 +165,11 @@
   }
 
   .advantages__specification {
-    margin: 0 auto;
+    margin: 25px auto;
     width: 80%;
+
+    &:first-of-type {
+      width: 30%;
+    }
   }
 }
