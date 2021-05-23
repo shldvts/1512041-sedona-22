@@ -1,0 +1,108 @@
+// @import "blocks/visited-form.less";
+
+.visited-form__headliner {
+  margin-bottom: 38px;
+}
+
+.visited-form__checkbox-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: start;
+}
+
+.visited-form__checkbox-list-item {
+  margin-left: 78px;
+
+  &:not(:last-child) {
+    margin-bottom: 55px;
+  }
+}
+
+.visited-form__checkbox-list-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.visited-form__checkbox-input {
+  display: none;
+}
+
+.visited-form__checkbox-input:focus + label {
+  outline: 1px dashed @blue-active;
+}
+
+.visited-form__checkbox-input + label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -15px;
+  width: 55px;
+  height: 55px;
+  background-color: @gray-input;
+  border-radius: 10%;
+}
+
+.visited-form__checkbox-input:hover + label::before {
+  background-color: @gray-input-hover;
+}
+.visited-form__checkbox-input:active + label::before {
+  background-color: @gray-input-active;
+}
+.visited-form__checkbox-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 3px;
+  width: 23px;
+  height: 16px;
+  background-image: url("../img/icons/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.visited-form__checkbox-input:checked:active + label::after {
+  opacity: 0.3;
+}
+
+.visited-form__checkbox-label {
+  .font-property(700; 18px; 26px);
+  text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .visited-form {
+    border-top: 1px solid @gray-input-hover;
+    text-align: center;
+  }
+
+  .visited-form__headliner {
+    width: 60%;
+    margin-bottom: 65px;
+  }
+
+  .visited-form__checkbox-list {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-left: 95px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visited-form__headliner {
+    width: 40%;
+    margin-bottom: 60px;
+  }
+
+  .visited-form__checkbox-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+}

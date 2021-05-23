@@ -22,16 +22,16 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__list-item">
-                <a class="main-nav__link" href="#">Главная</a>
+                <a class="main-nav__link" href="#" aria-label="Перейти на главную страницу">Главная</a>
               </li>
               <li class="main-nav__list-item">
-                <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+                <a class="main-nav__link" href="catalog.html" aria-label="Перейти в галерею">Фото и видео</a>
               </li>
               <li class="main-nav__list-item">
-                <a class="main-nav__link" href="form.html">Форма отзыва</a>
+                <a class="main-nav__link" href="form.html" aria-label="Перейти на страницу отзыва">Форма отзыва</a>
               </li>
               <li class="main-nav__list-item">
-                <a class="main-nav__link" href="blank.html">HTML Academy</a>
+                <a class="main-nav__link" href="blank.html" aria-label="Перейти на сайт HTML-Академии">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -63,6 +63,9 @@
               </div>
               <div class="advantages__image advantages__image--real-life">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-d.webp 1x, img/photo-city-d@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-t.webp 1x, img/photo-city-t@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-city-m.webp 1x, img/photo-city-m@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-city-d.jpg 1x, img/photo-city-d@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-city-t.jpg 1x, img/photo-city-t@2x.jpg 2x">
                   <img class="advantages__image-img" src="img/photo-city-m.jpg" srcset="img/photo-city-m@2x.jpg" alt="Фото города">
@@ -91,6 +94,9 @@
               </div>
               <div class="advantages__image advantages__image--devil-bridge">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-d.webp 1x, img/photo-bridge-d@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-t.webp 1x, img/photo-bridge-t@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-m.webp 1x, img/photo-bridge-m@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-d.jpg 1x, img/photo-bridge-d@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-t.jpg 1x, img/photo-bridge-t@2x.jpg 2x">
                   <img class="advantages__image-img" src="img/photo-bridge-m.jpg" srcset="img/photo-bridge-m@2x.jpg" alt="Скалистый мост">
@@ -119,10 +125,13 @@
           <h2 class="visually-hidden">Бронирование гостиницы в Седоне</h2>
           <h3 class="booking__title">Заинтересовались?</h3>
           <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в&nbsp;Cедоне</p>
-          <a class="button booking__button-search" href="blank.html">Найти гостиницу</a>
+          <a class="button booking__button-search" href="blank.html" aria-label="Перейти на страницу поиска гостиницы">Найти гостиницу</a>
           <div class="booking__map">
-            <a href="#">
+            <a href="#" aria-label="Открыть карту">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-d.webp 1x, img/map-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/map-t.webp 1x, img/map-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/map-m.webp 1x, img/map-m@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/map-d.png 1x, img/map-d@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/map-t.png 1x, img/map-t@2x.png 2x">
                 <img src="img/map-m.png" srcset="img/map-m@2x.png" alt="Карта">
@@ -137,24 +146,24 @@
         <div class="page-footer__social social-club">
           <ul class="social-club__list">
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy">
+              <a class="button social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Перейти в твиттер">
                 <img src="img/icons/icon-twitter.svg" width="18" height="15" alt="twitter">
               </a>
             </li>
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy">
+              <a class="button social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Перейти в фейсбук">
                 <img src="img/icons/icon-facebook.svg" width="9" height="19" alt="facebook">
               </a>
             </li>
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy">
+              <a class="button social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy" aria-label="Перейти в ютуб">
                 <img src="img/icons/icon-youtube.svg" width="20" height="14" alt="youtube">
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика">Разработано
             <svg class="copyright__icon" width="40" height="50">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>

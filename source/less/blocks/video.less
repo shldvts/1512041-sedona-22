@@ -104,6 +104,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 22px;
+  cursor: pointer;
 }
 
 .video__progressbar-toggler {
@@ -118,10 +119,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 56px;
-
-  &:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -178,6 +176,20 @@
     &--subtitles {
       margin-left: 475px;
     }
+
+    &:hover {
+      cursor: pointer;
+
+      .video__tools-icon {
+        fill: fade(@basic-white; 60%);
+      }
+    }
+
+    &:active {
+      .video__tools-icon {
+        fill: fade(@basic-white; 30%);
+      }
+    }
   }
 
   .video__tools-icon {
@@ -201,20 +213,6 @@
   }
 
   .video__tools-button {
-    &:hover {
-      cursor: pointer;
-
-      .video__tools-icon {
-        fill: fade(@basic-white; 60%);
-      }
-    }
-
-    &:active {
-      .video__tools-icon {
-        fill: fade(@basic-white; 30%);
-      }
-    }
-
     &--subtitles {
       margin-left: 625px;
     }

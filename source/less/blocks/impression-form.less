@@ -1,0 +1,75 @@
+// @import "blocks/impression-form.less";
+
+.impression-form__radio-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: start;
+}
+
+.impression-form__radio-list-item {
+  margin-top: 42px;
+  margin-left: 78px;
+}
+
+.impression-form__radio-list-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.impression-form__radio-input {
+  display: none;
+}
+
+.impression-form__radio-input:focus + label {
+  outline: 1px dashed @blue-active;
+}
+
+.impression-form__radio-input + label::before {
+  content: "";
+  position: absolute;
+  left: -78px;
+  top: -15px;
+  width: 55px;
+  height: 55px;
+  background-color: @gray-input;
+  border-radius: 50%;
+}
+.impression-form__radio-input:hover + label::before {
+  background-color: @gray-input-hover;
+}
+.impression-form__radio-input:active + label::before {
+  background-color: @gray-input-active;
+}
+.impression-form__radio-input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background-color: @video-buttons-hover;
+  border-radius: 50%;
+}
+.impression-form__radio-input:checked:active + label::after {
+  opacity: 0.3;
+}
+
+.impression-form__radio-label {
+  .font-property(700; 18px; 26px);
+  text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .impression-form__headliner {
+    margin-bottom: 32px;
+  }
+
+  .impression-form__radio-list-item {
+    &:not(:first-child) {
+      margin-top: 54px;
+    }
+  }
+}

@@ -21,18 +21,19 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html" aria-label="Перейти на главную страницу">Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html" aria-label="Перейти в галерею">Фото и видео</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Форма отзыва</a></li>
+              <a class="main-nav__link" href="#" aria-label="Перейти на страницу отзыва">Форма отзыва</a>
+            </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="blank.html">HTML Academy</a>
+              <a class="main-nav__link" href="blank.html" aria-label="Перейти на сайт HTML-Академии">HTML Academy</a>
             </li>
           </ul>
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу">
             <img src="img/sedona-logo.svg" width="102" height="84" alt="Sedona">
           </a>
         </nav>
@@ -99,18 +100,18 @@
             <li class="review__list-item review__list-item--impression-form">
               <fieldset class="review__field impression-form">
                 <legend class="review__headliner impression-form__headliner">Ваше общее впечатление:</legend>
-                <ul class="radio-list">
-                  <li class="radio-list-item">
-                    <input class="radio-input" type="radio" name="impession-radio" id="positive-radio" value="positive" checked>
-                    <label class="radio-label" for="positive-radio">Скорее положительное</label>
+                <ul class="impression-form__radio-list">
+                  <li class="impression-form__radio-list-item">
+                    <input class="impression-form__radio-input" type="radio" name="impession-radio" id="positive-radio" value="positive" checked>
+                    <label class="impression-form__radio-label" for="positive-radio">Скорее положительное</label>
                   </li>
-                  <li class="radio-list-item">
-                    <input class="radio-input" type="radio" name="impession-radio" id="negative-radio" value="negative">
-                    <label class="radio-label" for="negative-radio">Скорее отрицательное</label>
+                  <li class="impression-form__radio-list-item">
+                    <input class="impression-form__radio-input" type="radio" name="impession-radio" id="negative-radio" value="negative">
+                    <label class="impression-form__radio-label" for="negative-radio">Скорее отрицательное</label>
                   </li>
-                  <li class="radio-list-item">
-                    <input class="radio-input" type="radio" name="impession-radio" id="whoiam-radio" value="no-answer">
-                    <label class="radio-label" for="whoiam-radio">Затрудняюсь ответить</label>
+                  <li class="impression-form__radio-list-item">
+                    <input class="impression-form__radio-input" type="radio" name="impession-radio" id="whoiam-radio" value="no-answer">
+                    <label class="impression-form__radio-label" for="whoiam-radio">Затрудняюсь ответить</label>
                   </li>
                 </ul>
               </fieldset>
@@ -119,22 +120,22 @@
             <li class="review__list-item review__list-item--visited-form">
               <fieldset class="review__field visited-form">
                 <legend class="review__headliner visited-form__headliner">Посещенные достопримечательности:</legend>
-                <ul class="checkbox-list">
-                  <li class="checkbox-list-item">
-                    <input class="checkbox-input" type="checkbox" id="devil-checkbox" name="devil" checked>
-                    <label class="checkbox-label" for="devil-checkbox">Мост Дьявола</label>
+                <ul class="visited-form__checkbox-list">
+                  <li class="visited-form__checkbox-list-item">
+                    <input class="visited-form__checkbox-input" type="checkbox" id="devil-checkbox" name="devil" checked>
+                    <label class="visited-form__checkbox-label" for="devil-checkbox">Мост Дьявола</label>
                   </li>
-                  <li class="checkbox-list-item">
-                    <input class="checkbox-input" type="checkbox" id="bell-checkbox" name="bell" checked>
-                    <label class="checkbox-label" for="bell-checkbox">Гора-Колокол</label>
+                  <li class="visited-form__checkbox-list-item">
+                    <input class="visited-form__checkbox-input" type="checkbox" id="bell-checkbox" name="bell" checked>
+                    <label class="visited-form__checkbox-label" for="bell-checkbox">Гора-Колокол</label>
                   </li>
-                  <li class="checkbox-list-item">
-                    <input class="checkbox-input" type="checkbox" id="park-checkbox" name="park" checked>
-                    <label class="checkbox-label" for="park-checkbox">Слайд-парк</label>
+                  <li class="visited-form__checkbox-list-item">
+                    <input class="visited-form__checkbox-input" type="checkbox" id="park-checkbox" name="park" checked>
+                    <label class="visited-form__checkbox-label" for="park-checkbox">Слайд-парк</label>
                   </li>
-                  <li class="checkbox-list-item">
-                    <input class="checkbox-input" type="checkbox" id="rocks-checkbox" name="rocks">
-                    <label class="checkbox-label" for="rocks-checkbox">Красные скалы</label>
+                  <li class="visited-form__checkbox-list-item">
+                    <input class="visited-form__checkbox-input" type="checkbox" id="rocks-checkbox" name="rocks">
+                    <label class="visited-form__checkbox-label" for="rocks-checkbox">Красные скалы</label>
                   </li>
                 </ul>
               </fieldset>
@@ -150,34 +151,34 @@
           </ul>
           <p class="review__downbar">
             <small class="review__legend">* — обязательные поля</small>
-            <button class="button review__button" type="submit">Отправить отзыв</button>
+            <button class="button review__button" type="submit" aria-label="Отправить сформированный отзыв">Отправить отзыв</button>
           </p>
         </form>
       </main>
       <!-- FORM FOOTER -->
       <footer class="page-footer">
-        <a class="page-footer__hashtag" href="index.html">#visitsedona</a>
+        <a class="page-footer__hashtag" href="index.html" aria-label="Вернуться на главную страницу">#visitsedona</a>
         <div class="page-footer__social social-club">
           <ul class="social-club__list">
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy">
+              <a class="button social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Перейти в твиттер">
                 <img src="img/icons/icon-twitter.svg" width="18" height="15" alt="twitter">
               </a>
             </li>
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy">
+              <a class="button social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Перейти в фейсбук">
                 <img src="img/icons/icon-facebook.svg" width="9" height="19" alt="facebook">
               </a>
             </li>
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy">
+              <a class="button social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy" aria-label="Перейти в ютуб">
                 <img src="img/icons/icon-youtube.svg" width="20" height="14" alt="youtube">
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика"> Разработано
             <svg class="copyright__icon" width="40" height="50">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>

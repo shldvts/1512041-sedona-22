@@ -21,18 +21,19 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html" aria-label="Перейти на главную страницу">Главная</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="#">Фото и видео</a>
+              <a class="main-nav__link" href="#" aria-label="Перейти в галерею">Фото и видео</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+              <a class="main-nav__link" href="form.html" aria-label="Перейти на страницу отзыва">Форма отзыва</a>
+            </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__link" href="blank.html">HTML Academy</a>
+              <a class="main-nav__link" href="blank.html" aria-label="Перейти на сайт HTML-Академии">HTML Academy</a>
             </li>
           </ul>
-          <a class="page-header__logo" href="index.html">
+          <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу">
             <img src="img/sedona-logo.svg" width="102" height="84" alt="Sedona">
           </a>
         </nav>
@@ -52,8 +53,11 @@
         <section class="gallery">
           <h2 class="visually-hidden">Фотогалерея</h2>
           <figure class="gallery__item">
-            <a class="gallery__link" href="#">
+            <a class="gallery__link" href="#" aria-label="Открыть на весь экран фото Неродные просторы">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/sunset-road-d.webp 1x, img/gallery/sunset-road-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/sunset-road-t.webp 1x, img/gallery/sunset-road-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/sunset-road-m.webp 1x, img/gallery/sunset-road-m@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/gallery/sunset-road-d.jpg 1x, img/gallery/sunset-road-d@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/gallery/sunset-road-t.jpg 1x, img/gallery/sunset-road-t@2x.jpg 2x">
                 <img class="gallery__photo" src="img/gallery/sunset-road-m.jpg" srcset="img/gallery/sunset-road-m@2x.jpg" alt="Дорога на закате">
@@ -66,8 +70,11 @@
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <a class="gallery__link" href="#">
+            <a class="gallery__link" href="#" aria-label="Открыть на весь экран фото Местная растительность">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/cactus-d.webp 1x, img/gallery/cactus-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/cactus-t.webp 1x, img/gallery/cactus-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/cactus-m.webp 1x, img/gallery/cactus-m@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/gallery/cactus-d.jpg 1x, img/gallery/cactus-d@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/gallery/cactus-t.jpg 1x, img/gallery/cactus-t@2x.jpg 2x">
                 <img class="gallery__photo" src="img/gallery/cactus-m.jpg" srcset="img/gallery/cactus-m@2x.jpg" alt="Причудливый кактус">
@@ -80,8 +87,11 @@
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <a class="gallery__link" href="#">
+            <a class="gallery__link" href="#" aria-label="Открыть на весь экран фото Дорога на Север">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/serpentine-d.webp 1x, img/gallery/serpentine-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/serpentine-t.webp 1x, img/gallery/serpentine-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/serpentine-m.webp 1x, img/gallery/serpentine-m@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/gallery/serpentine-d.jpg 1x, img/gallery/serpentine-d@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/gallery/serpentine-t.jpg 1x, img/gallery/serpentine-t@2x.jpg 2x">
                 <img class="gallery__photo" src="img/gallery/serpentine-m.jpg" srcset="img/gallery/serpentine-m@2x.jpg" alt="Серпантин на лесистых холмах">
@@ -94,8 +104,11 @@
             </figcaption>
           </figure>
           <figure class="gallery__item">
-            <a class="gallery__link" href="#">
+            <a class="gallery__link" href="#" aria-label="Открыть на весь экран фото Мост дьявола">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/devil-bridge-d.webp 1x, img/gallery/devil-bridge-d@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/devil-bridge-t.webp 1x, img/gallery/devil-bridge-t@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery/devil-bridge-m.webp 1x, img/gallery/devil-bridge-m@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/gallery/devil-bridge-d.jpg 1x, img/gallery/devil-bridge-d@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/gallery/devil-bridge-t.jpg 1x, img/gallery/devil-bridge-t@2x.jpg 2x">
                 <img class="gallery__photo" src="img/gallery/devil-bridge-m.jpg" srcset="img/gallery/devil-bridge-m@2x.jpg" alt="Скальное образование похожее на мост">
@@ -115,6 +128,9 @@
           <p class="video__slogan">Смотрите видеопрезентацию и скорее за&nbsp;билетами, пока они не подорожали в&nbsp;очередной раз!</p>
           <div class="video__wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/video-poster-d.webp 1x, img/gallery/video-poster-d@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/video-poster-t.webp 1x, img/gallery/video-poster-t@2x.webp 2x">
+              <source type="image/webp" srcset="img/gallery/video-poster-m.webp 1x, img/gallery/video-poster-m@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/gallery/video-poster-d.jpg 1x, img/gallery/video-poster-d@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/gallery/video-poster-t.jpg 1x, img/gallery/video-poster-t@2x.jpg 2x">
               <img class="video__poster" src="img/gallery/video-poster-m.jpg" srcset="img/gallery/video-poster-m@2x.jpg" alt="Видеопрезентация">
@@ -147,28 +163,28 @@
       </main>
       <!-- CATALOG FOOTER -->
       <footer class="page-footer">
-        <a class="page-footer__hashtag" href="index.html">#visitsedona</a>
+        <a class="page-footer__hashtag" href="index.html" aria-label="Вернуться на главную страницу">#visitsedona</a>
         <div class="page-footer__social social-club">
           <ul class="social-club__list">
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy">
+              <a class="button social-club__link social-club__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Перейти в твиттер">
                 <img src="img/icons/icon-twitter.svg" width="18" height="15" alt="twitter">
               </a>
             </li>
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy">
+              <a class="button social-club__link social-club__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Перейти в фейсбук">
                 <img src="img/icons/icon-facebook.svg" width="9" height="19" alt="facebook">
               </a>
             </li>
             <li class="social-club__item">
-              <a class="button social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy">
+              <a class="button social-club__link social-club__link--youtube" href="https://youtube.com/htmlacademy" aria-label="Перейти в ютуб">
                 <img src="img/icons/icon-youtube.svg" width="20" height="14" alt="youtube">
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на сайт разработчика"> Разработано
             <svg class="copyright__icon" width="40" height="50">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
