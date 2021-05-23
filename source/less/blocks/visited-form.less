@@ -48,9 +48,11 @@
 .visited-form__checkbox-input:hover + label::before {
   background-color: @gray-input-hover;
 }
+
 .visited-form__checkbox-input:active + label::before {
   background-color: @gray-input-active;
 }
+
 .visited-form__checkbox-input:checked + label::after {
   content: "";
   position: absolute;
@@ -62,6 +64,7 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .visited-form__checkbox-input:checked:active + label::after {
   opacity: 0.3;
 }
